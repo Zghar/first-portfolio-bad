@@ -1,0 +1,165 @@
+.body h1, .body h2, .body .img-cv h1, .social-media h1, .skills h1 {
+  color: orange;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 6px gray;
+          box-shadow: 0 0 6px gray;
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: 17pt;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+a:hover {
+  color: orangered;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a span {
+  color: orangered;
+}
+
+#scroling {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  bottom: 15px;
+  right: 15px;
+  background: orangered;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container {
+  display: none;
+}
+
+.body {
+  background-color: black;
+  color: whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body span {
+  color: orange;
+  text-transform: capitalize;
+}
+
+.body .img-cv {
+  -webkit-box-shadow: 0 0 6px gray;
+          box-shadow: 0 0 6px gray;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.body .img-cv h1 {
+  z-index: 1;
+}
+
+.body .img-cv img {
+  z-index: 999;
+}
+
+.myname {
+  margin: auto;
+}
+
+.myname p {
+  text-transform: capitalize;
+  font-size: 23pt;
+  font-weight: 700;
+  color: #f6c00e;
+  text-align: center;
+}
+
+.myname p span {
+  color: red;
+  font-size: 25pt;
+}
+
+.social-media {
+  -webkit-box-shadow: 0 0 6px gray;
+          box-shadow: 0 0 6px gray;
+}
+
+.skills {
+  -webkit-box-shadow: 0 0 6px gray;
+          box-shadow: 0 0 6px gray;
+}
+
+.progress {
+  -webkit-box-shadow: 0 0 6px gray;
+          box-shadow: 0 0 6px gray;
+  margin-top: 10px;
+}
+
+.progress .progress-bar {
+  font-size: 10pt;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.projcets p {
+  color: white;
+  background-color: rgba(255, 68, 0, 0.507);
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  display: none;
+}
+
+.info {
+  -webkit-box-shadow: 0 0 6px gray;
+          box-shadow: 0 0 6px gray;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  text-transform: capitalize;
+  height: 280px;
+  margin-top: 40px;
+  width: 240px;
+  cursor: pointer;
+}
+
+.info li {
+  padding: 5px;
+}
+
+.info:hover {
+  background-color: goldenrod;
+}
+/*# sourceMappingURL=css.css.map */

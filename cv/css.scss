@@ -1,0 +1,171 @@
+$orange-color:orange;
+$white-color:white;
+$boxshadow:0 0 6px gray;
+$borderraduis:4px;
+$padding:5px;
+$texttransformc:capitalize;
+$textcenter:center;
+
+
+%h1{
+    color: $orange-color;
+    border-radius: $borderraduis;
+    box-shadow: $boxshadow;
+    padding: $padding;
+    text-transform: $texttransformc;
+    font-size: 17pt;
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: $texttransformc;
+    transition: .4s ease-in-out;
+    &:hover{
+        color: orangered;
+    }
+}
+
+body{
+background-color: black;    
+}
+//start navbar of cv
+.navbar a {
+    text-decoration: none;
+    color: white;
+    
+    span{
+    color: orangered;
+    
+    }
+}
+//end navbar of cv
+// srolling to top
+#scroling{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    text-align: $textcenter;
+    bottom: 15px;
+    right: 15px;
+    background: orangered;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    align-items: center;
+    cursor:pointer;
+
+}
+.container{
+    display: none;
+}
+//auto writer
+
+//end  scroll
+.body{
+    background-color: black;
+    color: whitesmoke;
+ 
+    align-items: $textcenter;
+    h1{
+        @extend %h1;
+    }
+    
+    h2{
+        @extend %h1;
+    }
+    span{
+        color: $orange-color;
+        text-transform: $texttransformc;
+        
+    }
+
+    .img-cv{
+        box-shadow: $boxshadow;
+        align-items: $textcenter;
+        overflow: hidden;
+        h1{
+            @extend %h1;
+            
+            z-index: 1;
+           
+            
+        }
+        img{
+            z-index: 999;
+        }
+    }
+}
+.myname{
+    margin:auto;
+    p{
+        text-transform: capitalize;
+        font-size: 23pt;
+        font-weight: 700;
+        color: rgb(246, 192, 14);
+        text-align: $textcenter;
+        span{
+            color: red;
+            font-size: 25pt;
+        }
+    }
+}
+.social-media{
+    box-shadow: $boxshadow;
+}
+.social-media h1{
+    @extend %h1;
+}
+.skills{
+    box-shadow: $boxshadow;
+    h1{
+        @extend %h1;
+    }
+}
+.progress{
+    box-shadow: $boxshadow;
+    margin-top: 10px;
+
+    
+    .progress-bar{
+        font-size: 10pt;
+       color: rgb(255, 255, 255);
+       font-weight: 700;
+       letter-spacing: 2px;
+       
+    }
+}
+
+.projcets p{
+    color:$white-color;
+    background-color: rgba(255, 68, 0, 0.507);
+    width: 90%;
+    height: 30px;
+    text-align: $textcenter;
+    border-radius: $borderraduis;
+    display: none;
+    
+}
+
+.info{
+    box-shadow: $boxshadow;
+ transition: 1s ease-in-out ;   
+text-transform: $texttransformc;
+height: 280px;
+margin-top: 40px;
+width: 240px;
+cursor: pointer;
+li{
+    padding:$padding;
+}
+    &:hover{
+background-color:goldenrod ;
+    }
+}
+
